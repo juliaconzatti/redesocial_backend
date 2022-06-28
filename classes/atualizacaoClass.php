@@ -1,5 +1,7 @@
 <?php
 
+require dirname(__FILE__) . "/../config.php";
+
 class Atualizacao {
 	private $id;
 	private $paginaslidas = "";
