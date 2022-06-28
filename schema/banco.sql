@@ -1,4 +1,4 @@
-CREATE TABLE usuarios(
+CREATE TABLE clientes(
     id INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(50) NOT NULL,
     usuario VARCHAR(15) NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE forum(
     PRIMARY KEY (id)
 );
 
-CREATE TABLE resenha(
+CREATE TABLE resenhas(
     id INT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR (70) NOT NULL,
     resenha TEXT NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE resenha(
     
 );
 
-CREATE TABLE atualizacao(
+CREATE TABLE atualizacoes(
     id INT NOT NULL AUTO_INCREMENT,
     paginas INT NOT NULL,
     comentario TEXT NOT NULL,
