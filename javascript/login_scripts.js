@@ -10,7 +10,7 @@ onload = async () => {
     body.append('email', inputEmail)
     body.append('senha', inputSenha)
 
-    const response = await fetch(`autenticar.php`, {
+    const response = await fetch(`../redesocial_backend/autenticar.php`, {
       method: "POST",
       body
     })
@@ -23,10 +23,11 @@ onload = async () => {
       }, 2000)
       logout(false)
     }else {
-      const {token, email} = data
+      const {token, cliente} = data
       localStorage.setCliente('token', token)
-      localStorage.setCliente('cliente', JSON.stringify(email))
-      location.href="//localhost/julia/redesocial_frontend/clubeRomance.php";
+      //localStorage.setCliente('cliente', JSON.stringify(cliente))
+      location.href="../../redesocial_frontend/clubeRomance.php";
     }
   })
 }
+
